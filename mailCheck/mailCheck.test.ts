@@ -15,9 +15,14 @@ describe("mailCheck", () => {
         const actual = mailCheck("test@example.");   
         expect(actual).toBe(false);
     });
-    
+
     test("should return false for email with space", () => {
         const actual = mailCheck("test@ example.com");   
+        expect(actual).toBe(false);
+    });
+
+    test ("should return false for email without text before @", () => {
+        const actual = mailCheck("@example.com");   
         expect(actual).toBe(false);
     });
 });

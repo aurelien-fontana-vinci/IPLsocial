@@ -1,5 +1,9 @@
 export function mailCheck(email: string): boolean {
-    if (!email.includes("@") || email.includes(" ")) {
+    if (!email.includes("@") || email.includes(" ") ) {
+        return false;
+    }
+    
+    if (email.startsWith("@")) {
         return false;
     }
 
@@ -10,6 +14,6 @@ export function mailCheck(email: string): boolean {
     if (parts[1].endsWith(".")) {
         return false;
     }
-    
+
     return true;
 }
