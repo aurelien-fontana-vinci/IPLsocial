@@ -3,14 +3,20 @@ export function mailCheck(email: string): boolean {
         return false;
     }
 
+    if (!isValidDomain(email)) {
+        return false;
+    }
 
-    const parts = email.split("@");
+    return true;
+}
+
+function isValidDomain(domain: string): boolean {
+    const parts = domain.split("@");
     if (!parts[1].includes(".")) {
         return false;
     }
     if (parts[1].endsWith(".")) {
         return false;
     }
-
     return true;
 }
