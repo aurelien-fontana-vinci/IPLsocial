@@ -7,7 +7,7 @@ GitHub: https://github.com/aurelien-fontana-vinci/IPLsocial
 
 Description
 -----------
-This module is part of the IPLSocial project and contains a function that checks
+This module contains a function that checks
 whether an email address is valid according to several rules.
 The goal is to prevent incorrect formats before they are used in the application.
 
