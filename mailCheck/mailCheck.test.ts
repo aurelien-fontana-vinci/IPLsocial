@@ -6,4 +6,8 @@ describe("mailCheck", () => {
        expect(actual).toBe(false);
    });
 
+   test ("should return true for email without . after @", () => {
+       const actual = mailCheck("test@example");   
+       expect(actual).toBe(false);
+    });
 });
