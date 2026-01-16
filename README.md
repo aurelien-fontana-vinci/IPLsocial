@@ -18,7 +18,7 @@ An email address is considered invalid if:
 - it does not contain "@"
 - it does not contain a "." after the "@"
 - it ends with "."
-- it contains a space (" ")
+- it contains a space " "
 - it has no text before or after the "@"
 
 Installing Dependencies
