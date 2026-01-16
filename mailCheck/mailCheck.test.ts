@@ -31,5 +31,8 @@ describe("mailCheck", () => {
         expect(actual).toBe(false);
     });
 
-    
+    test ("should return true for valid email", () => {
+        const actual = mailCheck("test@example.com");   
+        expect(actual).toBe(true);
+    });
 });
