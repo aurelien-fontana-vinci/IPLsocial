@@ -25,4 +25,10 @@ describe("mailCheck", () => {
         const actual = mailCheck("@example.com");   
         expect(actual).toBe(false);
     });
+
+    test ("should return false for email without text after @", () => {
+        const actual = mailCheck("test@");   
+        expect(actual).toBe(false);
+    });
+    
 });

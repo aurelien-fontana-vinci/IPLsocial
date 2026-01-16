@@ -2,10 +2,12 @@ export function mailCheck(email: string): boolean {
     if (!email.includes("@") || email.includes(" ") ) {
         return false;
     }
-    
+
     if (email.startsWith("@")) {
         return false;
     }
+
+    
 
     const parts = email.split("@");
     if (!parts[1].includes(".")) {
