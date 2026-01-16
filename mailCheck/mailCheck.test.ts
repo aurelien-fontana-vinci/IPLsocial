@@ -30,5 +30,6 @@ describe("mailCheck", () => {
         const actual = mailCheck("test@");   
         expect(actual).toBe(false);
     });
+
     
 });
