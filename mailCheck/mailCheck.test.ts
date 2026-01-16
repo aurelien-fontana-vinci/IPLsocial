@@ -10,4 +10,9 @@ describe("mailCheck", () => {
        const actual = mailCheck("test@example");   
        expect(actual).toBe(false);
     });
+
+    test ("should return false for email ending with .", () => {
+        const actual = mailCheck("test@example.");   
+        expect(actual).toBe(false);
+    });
 });
